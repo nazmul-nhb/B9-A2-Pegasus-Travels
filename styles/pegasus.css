@@ -1,25 +1,35 @@
-:root {
-    --orange: #FF5400;
-}
-
 /* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700;800&display=swap');
 
 body {
     font-family: 'Mulish', sans-serif;
+    /* width: 1440px; */
 }
+
+/* Variables */
+:root {
+    --orange: #FF5400;
+    --white: #FFFFFF;
+}
+
 
 /* Shared Styles */
 .orange {
-    color: #FF5400;
+    color: var(--orange);
+}
 
+.banner-title,
+.banner-content {
+    color: var(--white);
+}
+
+header,
+main {
+    margin: 40px 135px;
 }
 
 
 /* Header Styles */
-header {
-    margin: 40px 135px;
-}
 
 .header {
     display: flex;
@@ -74,6 +84,79 @@ header {
     color: var(--orange);
 }
 
+/* Banner Section */
+.banner {
+    background-image: url('../images/banner.png');
+    background-repeat: no-repeat;
+    width: 1170px;
+    height: 500px;
+    border-radius: 16px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.banner-container {
+    border-radius: 16px;
+    background: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%);
+    text-align: center;
+    width: 1170px;
+    height: 500px;
+}
+
+.banner-title {
+    font-size: 4rem;
+    font-weight: 800;
+    padding-top: 106px;
+}
+
+.banner-content {
+    width: 676px;
+    margin: 0 auto;
+}
+
+/* Search Box */
+.search-container {
+    width: 800px;
+    height: 84px;
+    margin: 0 auto;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.30);
+}
+
+form {
+    display: flex;
+    justify-content: space-around;
+    /* align-items: center; Not Working!
+    align-content: center; */
+    gap: 8px;
+    position: relative;
+    top: 16px;
+}
+
+input,
+select {
+    width: 174px;
+    height: 52px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: var(--white);
+    padding: 16px 15px;
+    border: 1px solid var(--white);
+}
+
+form .search {
+    position: absolute;
+    right: 120px;
+    top: 14px;
+}
+
+input[type="button"] {
+    border-radius: 8px;
+    background: var(--orange);
+    border: 1px solid var(--orange);
+    color: var(--white);
+    cursor: pointer;
+}
 
 
 
@@ -82,10 +165,13 @@ header {
 /* Responsive Styles */
 /* Mobile Devices */
 @media screen and (max-width:600px) {
-    header {
+
+    header,
+    main {
         margin: 18px 20px;
     }
 
+    /* Header and Navigation Bar Styles */
     .title-container .logo {
         max-height: 56px;
         position: relative;
