@@ -18,14 +18,15 @@ body {
     color: var(--orange);
 }
 
-.banner-title,
-.banner-content {
-    color: var(--white);
-}
 
 header,
 main {
     margin: 40px 135px;
+}
+
+.banner-title,
+.banner-content {
+    color: var(--white);
 }
 
 
@@ -123,18 +124,18 @@ main {
     background: rgba(255, 255, 255, 0.30);
 }
 
-form {
+.search-container form {
     display: flex;
     justify-content: space-around;
-    align-items: center; Not Working!
+    align-items: center;
     align-content: center;
     gap: 8px;
     position: relative;
     top: 16px;
 }
 
-input,
-select {
+.search-container input,
+.search-container select {
     width: 174px;
     height: 52px;
     border-radius: 8px;
@@ -142,7 +143,7 @@ select {
     padding: 16px 15px;
     border: 1px solid var(--white);
 }
-
+/* Search Icon */
 form .search {
     position: absolute;
     right: 120px;
@@ -182,7 +183,7 @@ input[type="button"] {
     }
 
     .hamburger {
-        display: block;
+        display: inline-block;
     }
 
     .nav-bar {
@@ -222,17 +223,18 @@ input[type="button"] {
 
     }
 
-    form {
+    .search-container form {
         flex-direction: column;
         align-items: center;
-        gap:16px;
+        gap: 16px;
     }
 
-    input,
-    select {
+    .search-container input,
+    .search-container select {
         width: 255px;
         height: 52px;
     }
+
     form .search {
         right: 170px;
         top: 218px;
