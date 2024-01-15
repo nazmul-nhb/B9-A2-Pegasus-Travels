@@ -118,7 +118,7 @@ main {
 .search-container {
     width: 800px;
     height: 84px;
-    margin: 0 auto;
+    margin: 64px auto 0 auto;
     border-radius: 8px;
     background: rgba(255, 255, 255, 0.30);
 }
@@ -126,8 +126,8 @@ main {
 form {
     display: flex;
     justify-content: space-around;
-    /* align-items: center; Not Working!
-    align-content: center; */
+    align-items: center; Not Working!
+    align-content: center;
     gap: 8px;
     position: relative;
     top: 16px;
@@ -137,7 +137,6 @@ input,
 select {
     width: 174px;
     height: 52px;
-    flex-shrink: 0;
     border-radius: 8px;
     background: var(--white);
     padding: 16px 15px;
@@ -188,5 +187,54 @@ input[type="button"] {
 
     .nav-bar {
         display: none;
+    }
+
+    /* Banner Styles */
+    .banner {
+        width: 335px;
+        height: 483px;
+        /* width: 100%; */
+        background-size: auto auto;
+    }
+
+    .banner-container {
+        width: 335px;
+        height: 483px;
+        /* width: 100%; */
+        background-size: auto auto;
+    }
+
+    .banner-title {
+        font-size: 1.375rem;
+        font-weight: 800;
+        padding-top: 32px;
+    }
+
+    .banner-content {
+        width: 304px;
+        margin: 0 auto;
+    }
+
+    .search-container {
+        width: 288px;
+        height: 288px;
+        margin: 48px auto 0 auto;
+
+    }
+
+    form {
+        flex-direction: column;
+        align-items: center;
+        gap:16px;
+    }
+
+    input,
+    select {
+        width: 255px;
+        height: 52px;
+    }
+    form .search {
+        right: 170px;
+        top: 218px;
     }
 }
