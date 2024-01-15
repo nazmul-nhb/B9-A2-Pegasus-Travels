@@ -1,6 +1,106 @@
+:root {
+    --orange: #FF5400;
+}
+
 /* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700;800&display=swap');
 
-body{
+body {
     font-family: 'Mulish', sans-serif;
+}
+
+/* Shared Styles */
+.orange {
+    color: #FF5400;
+
+}
+
+
+/* Header Styles */
+header {
+    margin: 40px 135px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.title-container {
+    display: flex;
+}
+
+.title-container .logo {
+    max-height: 56px;
+    position: relative;
+    top: 20px;
+}
+
+.site-title {
+    color: #131318;
+    font-size: 2.25rem;
+    font-weight: 800;
+}
+
+/* Navbar */
+.hamburger {
+    display: none;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.nav-bar li {
+    list-style: none;
+    font-size: 1.125rem;
+}
+
+.nav-bar li:nth-child(1) {
+    font-size: 1.125rem;
+    font-weight: 700;
+}
+
+.nav-bar a {
+    text-decoration: none;
+    color: #424247;
+}
+
+.nav-bar a:hover {
+    color: var(--orange);
+}
+
+
+
+
+
+
+/* Responsive Styles */
+/* Mobile Devices */
+@media screen and (max-width:600px) {
+    header {
+        margin: 18px 20px;
+    }
+
+    .title-container .logo {
+        max-height: 56px;
+        position: relative;
+        top: -4px;
+    }
+
+    .site-title {
+        font-size: 1.35rem;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .nav-bar {
+        display: none;
+    }
 }
