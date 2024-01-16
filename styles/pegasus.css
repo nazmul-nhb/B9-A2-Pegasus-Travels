@@ -205,6 +205,107 @@ form .search {
     width: 100%;
 }
 
+/* Choose Your Destination Styles */
+.destination {
+    margin-top: 96px;
+}
+
+.destination-title-container {
+    text-align: center;
+}
+
+.common-title {
+    margin-bottom: 24px;
+}
+
+.destination-description {
+    width: 640px;
+    margin: 0 auto;
+}
+
+#destination1 {
+    background-image: url('../images/Maldives.png');
+    background-repeat: no-repeat;
+    width: 573px;
+    height: 300px;
+    border-radius: 16px;
+}
+
+#destination2 {
+    background-image: url('../images/Indonesia.png');
+    background-repeat: no-repeat;
+    width: 573px;
+    height: 300px;
+    border-radius: 16px;
+}
+
+#destination3 {
+    background-image: url('../images/Sri-Lanka.png');
+    background-repeat: no-repeat;
+    width: 374px;
+    height: 286px;
+    border-radius: 16px;
+}
+
+#destination4 {
+    background-image: url('../images/North-America.png');
+    background-repeat: no-repeat;
+    width: 474px;
+    height: 286px;
+    border-radius: 16px;
+}
+
+#destination5 {
+    background-image: url('../images/Kashmir.png');
+    background-repeat: no-repeat;
+    width: 274px;
+    height: 286px;
+    border-radius: 16px;
+}
+
+#destination6 {
+    background-image: url('../images/Bangladesh.png');
+    background-repeat: no-repeat;
+    width: 473px;
+    height: 300px;
+    border-radius: 16px;
+}
+
+#destination7 {
+    background-image: url('../images/Bandarban.png');
+    background-repeat: no-repeat;
+    width: 673px;
+    height: 300px;
+    border-radius: 16px;
+}
+
+.destination-image-container {
+    margin: 48px auto;
+}
+
+.destination-bg-image {
+    border-radius: 16px;
+    background: linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%);
+    text-align: center;
+}
+
+.row-1,
+.row-2,
+.row-3 {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    margin-bottom: 24px;
+}
+
+.destination-name {
+    color: var(--white);
+    font-size: 1.75rem;
+    font-style: normal;
+    font-weight: 800;
+    position: relative;
+    top: calc(50% - 00.875rem);
+}
 
 /* Responsive Styles */
 /* Mobile Devices */
@@ -294,9 +395,45 @@ form .search {
 
     .common-title {
         font-size: 1.25rem;
+        margin-bottom: 16px;
     }
 
-    .tour-photo img {
+    .tour-photo img,
+    .destination-description {
         width: 100%;
     }
+
+    .destination {
+        margin-top: 24px;
+    }
+.row-1{
+    margin-top: 16px;
+}
+    .row-1,
+    .row-2,
+    .row-3 {
+        flex-direction: column;
+        width: 100%;
+
+    }
+
+    #destination1,
+    #destination2,
+    #destination3,
+    #destination4,
+    #destination5,
+    #destination6,
+    #destination7 {
+        width: 100%;
+        height: 200px;
+        background-size: 100% 100%;
+    }
+
+    #destination5{
+        background-image: url('../images/Kashmir335px.png');
+    }
+    .destination-name{
+        font-size: 1.25rem;
+    }
+
 }
