@@ -82,10 +82,11 @@ main {
 
 .title-container {
     display: flex;
+    gap: 16px;
 }
 
 .title-container .logo {
-    max-height: 56px;
+    height: 56px;
     position: relative;
     top: 20px;
 }
@@ -447,7 +448,57 @@ hr {
     font-size: 2rem;
     font-weight: 800;
     position: relative;
-    top: 25%; 
+    top: 25%;
+}
+
+/* Footer Styles */
+.footer {
+    background: rgba(19, 19, 24, 0.05);
+    text-align: center;
+    padding-top: 60px;
+}
+
+.footer-logo-container {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.footer-logo-container .footer-logo {
+    height: 46px;
+    position: relative;
+    top: 20px;
+}
+
+.footer-logo-title {
+    color: #131318;
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.footer-text {
+    width: 54%;
+    margin: 0 auto;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 32px;
+}
+
+.social {
+    text-decoration: none;
+    color: #131318;
+}
+
+.social:hover {
+    color: var(--orange);
+}
+
+.copyright {
+    padding-bottom: 110px;
 }
 
 
@@ -461,8 +512,12 @@ hr {
     }
 
     /* Header and Navigation Bar Styles */
+    .title-container {
+        gap: 10px;
+    }
+
     .title-container .logo {
-        max-height: 56px;
+        height: 56px;
         top: -4px;
     }
 
@@ -549,7 +604,8 @@ hr {
     }
 
     /* Choose Your Destination Responsive */
-    .destination, .newsletter {
+    .destination,
+    .newsletter {
         margin-top: 24px;
     }
 
@@ -616,26 +672,51 @@ hr {
         width: 78%;
     }
 
-    .offer-container{
+    .offer-container {
         width: 100%;
         height: 300px;
         background-size: 100% 100%;
     }
+
     .offer-stamp {
         border-radius: 12px;
         right: 8px;
         bottom: 32px;
         width: 214px;
-        height: 80px;}
+        height: 80px;
+    }
 
     .offer-stamp a {
         text-decoration: none;
         color: var(--white);
         top: 25%;
     }
-    
+
     .offer {
         font-size: 1.31rem;
-        top: 25%; 
+        top: 25%;
+    }
+
+    /* Footer Section Responsive Styles */
+    .footer {
+        padding-top: 34px;
+    }
+    .footer-logo-container {
+        gap: 10px;
+    }
+
+    .footer-logo-container .footer-logo {
+        height: 34px;
+        top: 13px;
+    }
+
+    .footer-logo-title {
+        font-size: 1.35rem;
+    }
+    .social-links {
+        margin-top: 16px;
+    }
+    .copyright {
+        padding-bottom: 32px;
     }
 }
