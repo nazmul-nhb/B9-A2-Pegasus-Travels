@@ -56,6 +56,21 @@ main {
     font-weight: 800;
 }
 
+
+.common-title-container {
+    text-align: center;
+}
+
+.common-title {
+    margin-bottom: 24px;
+}
+
+.common-description {
+    width: 640px;
+    margin: 0 auto;
+}
+
+
 /* Header Styles */
 
 .header {
@@ -164,6 +179,7 @@ main {
 .search-container select {
     width: 174px;
     height: 52px;
+    color: var(--gray);
     border-radius: 8px;
     background: var(--white);
     padding: 16px 15px;
@@ -208,19 +224,6 @@ form .search {
 /* Choose Your Destination Styles */
 .destination {
     margin-top: 96px;
-}
-
-.destination-title-container {
-    text-align: center;
-}
-
-.common-title {
-    margin-bottom: 24px;
-}
-
-.destination-description {
-    width: 640px;
-    margin: 0 auto;
 }
 
 #destination1 {
@@ -307,6 +310,50 @@ form .search {
     top: calc(50% - 00.875rem);
 }
 
+/* Why Choose Us Styles */
+.choose-reason-container {
+    margin-top: 48px;
+}
+
+.choose-row-1 {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.reason-title {
+    color: #131318;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.choose-reason {
+    border-radius: 16px;
+    padding: 32px;
+    width: 50%;
+    height: 284px;
+}
+
+#reason-1 {
+    border: 1px solid rgba(251, 181, 99, 0.20);
+    background: rgba(251, 181, 99, 0.05);
+}
+
+#reason-2 {
+    border: 1px solid rgba(41, 206, 246, 0.20);
+    background: rgba(41, 206, 246, 0.05);
+}
+
+#reason-3 {
+    margin: 24px auto;
+    border: 1px solid rgba(233, 68, 68, 0.20);
+    background: rgba(233, 68, 68, 0.05);
+}
+
+.reason-description {
+    padding-right: 23px;
+}
+
 /* Responsive Styles */
 /* Mobile Devices */
 @media screen and (max-width:600px) {
@@ -356,7 +403,7 @@ form .search {
     }
 
     .banner-content {
-        width: 304px;
+        width: 80%;
         margin: 0 auto;
     }
 
@@ -383,6 +430,7 @@ form .search {
         top: 218px;
     }
 
+    /* Popular Tours Responsive */
     .popular-tours {
         flex-direction: column;
         gap: 24px;
@@ -399,16 +447,19 @@ form .search {
     }
 
     .tour-photo img,
-    .destination-description {
+    .common-description {
         width: 100%;
     }
 
+    /* Choose Your Destination Responsive */
     .destination {
         margin-top: 24px;
     }
-.row-1{
-    margin-top: 16px;
-}
+
+    .row-1 {
+        margin-top: 16px;
+    }
+
     .row-1,
     .row-2,
     .row-3 {
@@ -429,11 +480,33 @@ form .search {
         background-size: 100% 100%;
     }
 
-    #destination5{
+    #destination5 {
         background-image: url('../images/Kashmir335px.png');
     }
-    .destination-name{
+
+    .destination-name {
         font-size: 1.25rem;
     }
 
+    /* Choose Us Responsive Styles */
+    .choose-reason-container {
+        margin-top: 24px;
+    }
+
+    .choose-row-1 {
+        flex-direction: column;
+    }
+
+    .reason-title {
+        font-size: 20px;
+    }
+
+    .choose-reason {
+        width: 82%;
+        height: 290px;
+    }
+
+    .reason-description {
+        padding-right: 0;
+    }
 }
