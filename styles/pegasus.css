@@ -174,7 +174,6 @@ input[type="button"] {
     /* Header and Navigation Bar Styles */
     .title-container .logo {
         max-height: 56px;
-        position: relative;
         top: -4px;
     }
 
@@ -183,7 +182,7 @@ input[type="button"] {
     }
 
     .hamburger {
-        display: inline-block;
+        display: block;
     }
 
     .nav-bar {
@@ -193,16 +192,16 @@ input[type="button"] {
     /* Banner Styles */
     .banner {
         width: 335px;
-        height: 483px;
+        height: 540px;
         /* width: 100%; */
-        background-size: auto auto;
+        background-size: 100% 100%;
     }
 
     .banner-container {
         width: 335px;
-        height: 483px;
+        height: 540px;
         /* width: 100%; */
-        background-size: auto auto;
+        background-size: 100% 100%;
     }
 
     .banner-title {
