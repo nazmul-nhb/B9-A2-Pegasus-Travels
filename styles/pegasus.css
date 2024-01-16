@@ -312,6 +312,10 @@ form .search {
 }
 
 /* Why Choose Us Styles */
+.choose-us {
+    margin-top: 100px;
+}
+
 .choose-reason-container {
     margin-top: 48px;
 }
@@ -452,6 +456,10 @@ hr {
 }
 
 /* Footer Styles */
+footer {
+    margin-top: 100px;
+}
+
 .footer {
     background: rgba(19, 19, 24, 0.05);
     text-align: center;
@@ -497,8 +505,14 @@ hr {
     color: var(--orange);
 }
 
+footer hr {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .copyright {
-    padding-bottom: 110px;
+    padding-bottom: 100px;
 }
 
 
@@ -655,7 +669,7 @@ hr {
     }
 
     .choose-reason {
-        width: 82%;
+        width: 80%;
         height: 290px;
     }
 
@@ -669,7 +683,7 @@ hr {
     }
 
     .newsletter-container {
-        width: 78%;
+        width: 75%;
     }
 
     .offer-container {
@@ -698,9 +712,15 @@ hr {
     }
 
     /* Footer Section Responsive Styles */
+    footer,
+    .choose-us {
+        margin-top: 32px;
+    }
+
     .footer {
         padding-top: 34px;
     }
+
     .footer-logo-container {
         gap: 10px;
     }
@@ -713,9 +733,15 @@ hr {
     .footer-logo-title {
         font-size: 1.35rem;
     }
+
     .social-links {
         margin-top: 16px;
     }
+
+    footer hr {
+        width: 90%;
+    }
+
     .copyright {
         padding-bottom: 32px;
     }
