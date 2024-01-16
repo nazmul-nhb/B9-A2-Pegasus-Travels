@@ -354,6 +354,103 @@ form .search {
     padding-right: 23px;
 }
 
+/* Newsletter Section Styles */
+.newsletter {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    padding: 0;
+    margin-top: 100px;
+}
+
+.newsletter-title {
+    margin-top: 0;
+    color: #131318;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.newsletter-container {
+    color: var(--gray);
+    background-color: var(--white);
+    border-radius: 16px;
+    border: 1px solid var(--orange);
+    padding: 40px;
+    width: 474px;
+    margin: 0;
+}
+
+hr {
+    border: 1px solid rgba(19, 19, 24, 0.10);
+    margin: 24px 0;
+}
+
+.newsletter form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.newsletter input {
+    height: 52px;
+    width: calc(100%-40px);
+    border-radius: 8px;
+    padding: 0 20px;
+    border: none;
+    background: rgba(19, 19, 24, 0.05);
+}
+
+.newsletter input[type="submit"] {
+    border-radius: 8px;
+    background: var(--orange);
+    border: 1px solid var(--orange);
+    color: var(--white);
+    cursor: pointer;
+    height: 52px;
+    padding: 8px;
+    font-size: 1.25rem;
+    font-weight: 800;
+    margin-top: 8px;
+}
+
+.offer-container {
+    width: 672px;
+    height: 422px;
+    border-radius: 16px;
+    background: url('../images/offer.png'), lightgray 50% / cover no-repeat;
+    position: relative;
+
+}
+
+.offer-stamp {
+    position: absolute;
+    color: var(--white);
+    text-align: center;
+    right: 7px;
+    bottom: 47px;
+    width: 324px;
+    height: 120px;
+    transform: rotate(-19.628deg);
+    border-radius: 16px;
+    background: var(--orange);
+    cursor: pointer;
+}
+
+.offer-stamp a {
+    text-decoration: none;
+    color: var(--white);
+    position: relative;
+    top: 25%;
+}
+
+.offer {
+    font-size: 2rem;
+    font-weight: 800;
+    position: relative;
+    top: 25%; 
+}
+
+
 /* Responsive Styles */
 /* Mobile Devices */
 @media screen and (max-width:600px) {
@@ -452,7 +549,7 @@ form .search {
     }
 
     /* Choose Your Destination Responsive */
-    .destination {
+    .destination, .newsletter {
         margin-top: 24px;
     }
 
@@ -508,5 +605,37 @@ form .search {
 
     .reason-description {
         padding-right: 0;
+    }
+
+    /* Newsletter Responsive */
+    .newsletter {
+        flex-direction: column;
+    }
+
+    .newsletter-container {
+        width: 78%;
+    }
+
+    .offer-container{
+        width: 100%;
+        height: 300px;
+        background-size: 100% 100%;
+    }
+    .offer-stamp {
+        border-radius: 12px;
+        right: 8px;
+        bottom: 32px;
+        width: 214px;
+        height: 80px;}
+
+    .offer-stamp a {
+        text-decoration: none;
+        color: var(--white);
+        top: 25%;
+    }
+    
+    .offer {
+        font-size: 1.31rem;
+        top: 25%; 
     }
 }
