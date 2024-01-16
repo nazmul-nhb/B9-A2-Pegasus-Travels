@@ -3,7 +3,6 @@
 
 body {
     font-family: 'Mulish', sans-serif;
-    /* width: 1440px; */
 }
 
 /* Variables */
@@ -291,6 +290,7 @@ form .search {
     border-radius: 16px;
     background: linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%);
     text-align: center;
+    cursor: pointer;
 }
 
 .row-1,
@@ -393,7 +393,8 @@ form .search {
     color: var(--gray);
     font-size: 1.2rem;
 }
-.visa-contact a:hover{
+
+.visa-contact a:hover {
     color: var(--orange);
 }
 
@@ -596,7 +597,6 @@ footer hr {
     .banner-container {
         width: 100%;
         height: 540px;
-        /* width: 100%; */
         background-size: 100% 100%;
     }
 
@@ -670,7 +670,6 @@ footer hr {
     .row-3 {
         flex-direction: column;
         width: 100%;
-
     }
 
     #destination1,
@@ -704,12 +703,17 @@ footer hr {
     }
 
     .reason-title {
-        font-size: 20px;
+        font-size: 1.25rem;
     }
 
     .choose-reason {
-        width: 82%;
+        width: 86%;
         height: 290px;
+    }
+
+    #reason-3 {
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .reason-description {
@@ -717,9 +721,18 @@ footer hr {
     }
 
     /* Visa Styles */
-    .unique-container{
-        width:88%;
+    .extra-unique {
+        margin-top: 32px;
+        margin-bottom: 40px;
+        display: flex;
+        justify-content: center;
     }
+
+    .unique-container {
+        width: 86%;
+        margin: 0 auto;
+    }
+
     .visa-container {
         flex-direction: column;
     }
@@ -731,7 +744,8 @@ footer hr {
     }
 
     .newsletter-container {
-        width: 77%;
+        width: 84%;
+        margin: 0 auto;
     }
 
     .offer-container {
@@ -782,7 +796,7 @@ footer hr {
         font-size: 1.35rem;
     }
 
-    .social-links, .extra-unique {
+    .social-links {
         margin-top: 16px;
     }
 
