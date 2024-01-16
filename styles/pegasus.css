@@ -359,6 +359,44 @@ form .search {
     padding-right: 23px;
 }
 
+/* Visa Styles */
+.extra-unique {
+    margin-top: 96px;
+}
+
+.unique-container {
+    text-align: center;
+    background-color: #c2521a20;
+    padding: 20px;
+    box-shadow: 8px 10px 12px var(--orange);
+}
+
+.visa-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+}
+
+.unique-title {
+    color: #131318;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.visa-consultant img {
+    width: 40%;
+}
+
+.visa-contact a {
+    text-decoration: none;
+    color: var(--gray);
+    font-size: 1.2rem;
+}
+.visa-contact a:hover{
+    color: var(--orange);
+}
+
 /* Newsletter Section Styles */
 .newsletter {
     display: flex;
@@ -662,6 +700,7 @@ footer hr {
 
     .choose-row-1 {
         flex-direction: column;
+        justify-content: center;
     }
 
     .reason-title {
@@ -669,7 +708,7 @@ footer hr {
     }
 
     .choose-reason {
-        width: 80%;
+        width: 82%;
         height: 290px;
     }
 
@@ -677,13 +716,22 @@ footer hr {
         padding-right: 0;
     }
 
-    /* Newsletter Responsive */
-    .newsletter {
+    /* Visa Styles */
+    .unique-container{
+        width:88%;
+    }
+    .visa-container {
         flex-direction: column;
     }
 
+    /* Newsletter Responsive */
+    .newsletter {
+        flex-direction: column;
+        justify-content: center;
+    }
+
     .newsletter-container {
-        width: 75%;
+        width: 77%;
     }
 
     .offer-container {
@@ -734,7 +782,7 @@ footer hr {
         font-size: 1.35rem;
     }
 
-    .social-links {
+    .social-links, .extra-unique {
         margin-top: 16px;
     }
 
