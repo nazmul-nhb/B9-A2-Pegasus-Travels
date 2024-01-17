@@ -53,7 +53,8 @@ main {
     padding: 8px;
     margin-top: 16px;
     font-size: 1.25rem;
-    font-weight: 800;
+    font-weight: 700;
+    /* font-weight: 800; looks ugly */
 }
 
 .btn-primary:hover {
@@ -193,7 +194,9 @@ main {
 
 /* Search Icon */
 
-.search-container input[type="button"] {
+.search {
+    width: 174px;
+    height: 52px;
     border-radius: 8px;
     background: var(--orange);
     border: 1px solid var(--orange);
@@ -202,16 +205,11 @@ main {
     font-weight: 700;
 }
 
-.search-container input[type="button"]:hover {
+.search:hover {
     color: var(--orange);
     background: var(--white);
 }
 
-form .search {
-    position: absolute;
-    right: 120px;
-    top: 14px;
-}
 
 /* Popular Tours and Simple Perfect Place Styles */
 .popular-tours,
@@ -259,7 +257,7 @@ form .search {
     width: 100%;
 }
 
-.tour-video:hover{
+.tour-video:hover {
     opacity: 88%;
     cursor: pointer;
 }
@@ -714,15 +712,12 @@ footer hr {
     }
 
     .search-container input,
-    .search-container select {
+    .search-container select,
+    .search {
         width: 90%;
         height: 52px;
     }
 
-    form .search {
-        right: 60%;
-        top: 218px;
-    }
 
     /* Popular Tours and Simple Perfect Place Responsive */
     .popular-tours,
