@@ -260,9 +260,10 @@ main {
 }
 
 .video-banner {
+    width: 276px;
     position: absolute;
     top: 40%;
-    right: 15%;
+    right: 25%;
     text-align: center;
     color: var(--white);
     font-size: 1.5rem;
@@ -748,7 +749,8 @@ footer hr {
     }
 
     .video-banner {
-        right: 13%;
+        right: 23%;
+        font-size: 1.25rem;
     }
 
     /* Choose Your Destination Responsive Styles */
