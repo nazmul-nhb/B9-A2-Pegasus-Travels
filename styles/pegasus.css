@@ -56,6 +56,10 @@ main {
     font-weight: 800;
 }
 
+.btn-primary:hover {
+    background: var(--white);
+    color: var(--orange);
+}
 
 .common-title-container {
     text-align: center;
@@ -195,6 +199,12 @@ main {
     border: 1px solid var(--orange);
     color: var(--white);
     cursor: pointer;
+    font-weight: 700;
+}
+
+.search-container input[type="button"]:hover {
+    color: var(--orange);
+    background: var(--white);
 }
 
 form .search {
@@ -249,10 +259,15 @@ form .search {
     width: 100%;
 }
 
+.tour-video:hover{
+    opacity: 88%;
+    cursor: pointer;
+}
+
 .video-banner {
     position: absolute;
     top: 40%;
-    right: 17%;
+    right: 15%;
     text-align: center;
     color: var(--white);
     font-size: 1.5rem;
@@ -441,6 +456,11 @@ video {
     width: 40%;
 }
 
+.visa-consultant img:hover {
+    transform: rotate(360deg);
+    transition: transform 4s ease-in-out 0.1s;
+}
+
 .visa-contact a {
     text-decoration: none;
     color: var(--gray);
@@ -510,6 +530,11 @@ hr {
     margin-top: 8px;
 }
 
+.newsletter input[type="submit"]:hover {
+    color: var(--orange);
+    background: var(--white);
+}
+
 .offer-container {
     width: 672px;
     height: 422px;
@@ -531,6 +556,18 @@ hr {
     border-radius: 16px;
     background: var(--orange);
     cursor: pointer;
+    border: 1px solid var(--orange);
+}
+
+.offer-stamp:hover,
+.offer-stamp a:hover {
+    color: var(--orange);
+    background: var(--white);
+}
+
+.offer-stamp:hover a {
+    color: var(--orange);
+    background: var(--white);
 }
 
 .offer-stamp a {
