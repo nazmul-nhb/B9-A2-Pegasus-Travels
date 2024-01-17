@@ -34,7 +34,8 @@ main {
     font-size: 2.5rem;
     font-weight: 800;
     margin-bottom: 24px;
-    margin-top: 16px;
+    margin-top: 0px;
+    line-height: normal;
 }
 
 .gray {
@@ -202,8 +203,9 @@ form .search {
     top: 14px;
 }
 
-/* Popular Tours Styles */
-.popular-tours {
+/* Popular Tours and Simple Perfect Place Styles */
+.popular-tours,
+.perfect-place {
     display: flex;
     justify-content: space-between;
     gap: 50px;
@@ -216,12 +218,14 @@ form .search {
 }
 
 .tour-description,
+.perfect-description,
 .tour-list li {
     margin-bottom: 16px;
     font-size: 1rem;
 }
 
 .popular-container,
+.perfect-place-container,
 .tour-list {
     width: 100%;
 }
@@ -231,6 +235,34 @@ form .search {
 }
 
 .tour-photo {
+    width: 100%;
+}
+
+.perfect-place ul {
+    color: #131318;
+    font-weight: 700;
+    line-height: 162.5%;
+}
+
+.tour-video {
+    position: relative;
+    width: 100%;
+}
+
+.video-banner {
+    position: absolute;
+    top: 40%;
+    right: 17%;
+    text-align: center;
+    color: var(--white);
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 150%;
+}
+
+video {
+    border-radius: 16px;
+    background: linear-gradient(180deg, #131318 -31.96%, rgba(19, 19, 24, 0.00) 100%);
     width: 100%;
 }
 
@@ -305,11 +337,12 @@ form .search {
     text-align: center;
     cursor: pointer;
 }
+
 .destination-bg-image:hover {
     opacity: 90%;
 }
 
-.destination-bg-image:hover .destination-name{
+.destination-bg-image:hover .destination-name {
     color: var(--orange);
 }
 
@@ -654,8 +687,9 @@ footer hr {
         top: 218px;
     }
 
-    /* Popular Tours Responsive */
-    .popular-tours {
+    /* Popular Tours and Simple Perfect Place Responsive */
+    .popular-tours,
+    .perfect-place {
         flex-direction: column;
         gap: 24px;
         margin-top: 24px;
@@ -673,7 +707,8 @@ footer hr {
         margin-bottom: 16px;
     }
 
-    .tour-photo {
+    .tour-photo,
+    .tour-video {
         width: 100%;
 
     }
@@ -681,6 +716,10 @@ footer hr {
     .tour-photo img,
     .common-description {
         width: 100%;
+    }
+
+    .video-banner {
+        right: 13%;
     }
 
     /* Choose Your Destination Responsive */
@@ -741,7 +780,9 @@ footer hr {
         height: 290px;
     }
 
-    #reason-1, #reason-2, #reason-3 {
+    #reason-1,
+    #reason-2,
+    #reason-3 {
         margin-left: auto;
         margin-right: auto;
     }
